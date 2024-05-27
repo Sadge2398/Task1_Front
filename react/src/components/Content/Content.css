@@ -1,0 +1,152 @@
+.main-content {
+  background-color: #eff2e6;
+  margin: 72px auto;
+  padding: 32px;
+  border-radius: 20px;
+  max-width: 1360px;
+}
+
+.filters-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filters {
+  display: flex;
+  gap: 48px;
+  border: 1px solid #c6cbb6;
+  padding: 8px;
+  border-radius: 12px;
+}
+.filters button:first-child {
+  background-color: #d9ddcb;
+}
+
+.view-all button {
+  color: #80ad01;
+  border: 1px dashed #80ad01;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 12px;
+    margin-top: 48px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  padding-bottom: 24px;
+  width: 230px;
+  height: 397px;
+  padding: 16px;
+}
+.card-badges {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 2px;
+}
+.card-badges img {
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 13px;
+  text-align: justify;
+  font-weight: 400;
+  margin-top: 18px;
+}
+.card-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+.rating {
+  font-size: 14px;
+  color: #6b6b6b;
+}
+.card-shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 83px;
+  height: 26px;
+  gap: 6px;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+}
+.card-shop p{
+    font-size: 12px;
+    text-align: right;
+    color: #878787;
+    font-weight: 300;
+    margin: 0;
+}
+.card-shop img{
+    width: 18px;
+    height: 18px;
+}
+.card-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+.card-price p{
+    margin: 0;
+}
+.off-price{
+    color: #b6b6b6;
+    text-decoration: line-through;
+    font-size: 14px;
+    text-align: left;
+}
+.price{
+    color: #80AD01;
+}.price span{
+    color: #878787;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .main-content{
+        margin: 0;
+        border-radius: 0;
+        padding: 4px;
+    }
+    .filters-section {
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }
+    .filters{
+        width: 385px;
+        gap: 2px;
+    }
+    .filters button{
+        width: 116;
+    }
+    .card{
+        width: 178px;
+    }
+}
